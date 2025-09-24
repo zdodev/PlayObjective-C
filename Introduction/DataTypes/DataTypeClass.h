@@ -4,7 +4,26 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DataTypeClass : NSObject
 
-@property NSInteger integerType;
+@property BOOL booleanType;
+
+@property (atomic, readwrite, assign) NSInteger integerType;
+@property NSUInteger uIntegerType;
+@property CGFloat floatType;
+@property (atomic, readwrite, strong) NSNumber *numberType;
+
+@property NSString *stringType;
+@property NSMutableString *mutableStringType;
+
+@property NSArray *arrayType;
+@property NSMutableArray *mutableArrayType;
+
+@property NSSet *setType;
+@property NSMutableSet *mutableSetType;
+
+@property NSDictionary *dictionaryType;
+@property NSMutableDictionary *mutableDictionaryType;
+
+- (void)printTypes;
 
 @end
 
