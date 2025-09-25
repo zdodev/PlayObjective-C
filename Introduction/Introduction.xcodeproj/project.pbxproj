@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CD260AEB2E84C3FC0079B3E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		CDDAAA0A2E83BD4B00E117E7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CD260AED2E84C3FC0079B3E2 /* Advanced */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Advanced; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDAAA0C2E83BD4B00E117E7 /* Introduction */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Introduction; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDAAA1A2E83BDB300E117E7 /* Basics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Basics; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDAAA282E83BFE700E117E7 /* DataTypes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataTypes; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +63,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		CD260AEE2E84C3FC0079B3E2 /* Advanced */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Advanced;
+			sourceTree = "<group>";
+		};
 		CDDAAA0E2E83BD4B00E117E7 /* Introduction */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Introduction;
@@ -76,6 +91,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CD260AEA2E84C3FC0079B3E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDDAAA092E83BD4B00E117E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,6 +136,7 @@
 				CDDAAA1B2E83BDB300E117E7 /* Basics */,
 				CDDAAA292E83BFE700E117E7 /* DataTypes */,
 				CDDAAABD2E83DBA000E117E7 /* ClassesAndObjects */,
+				CD260AEE2E84C3FC0079B3E2 /* Advanced */,
 				CDDAAA0D2E83BD4B00E117E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +148,7 @@
 				CDDAAA1A2E83BDB300E117E7 /* Basics */,
 				CDDAAA282E83BFE700E117E7 /* DataTypes */,
 				CDDAAABC2E83DBA000E117E7 /* ClassesAndObjects */,
+				CD260AED2E84C3FC0079B3E2 /* Advanced */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +156,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CD260AEC2E84C3FC0079B3E2 /* Advanced */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD260AF32E84C3FC0079B3E2 /* Build configuration list for PBXNativeTarget "Advanced" */;
+			buildPhases = (
+				CD260AE92E84C3FC0079B3E2 /* Sources */,
+				CD260AEA2E84C3FC0079B3E2 /* Frameworks */,
+				CD260AEB2E84C3FC0079B3E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CD260AEE2E84C3FC0079B3E2 /* Advanced */,
+			);
+			name = Advanced;
+			packageProductDependencies = (
+			);
+			productName = Advanced;
+			productReference = CD260AED2E84C3FC0079B3E2 /* Advanced */;
+			productType = "com.apple.product-type.tool";
+		};
 		CDDAAA0B2E83BD4B00E117E7 /* Introduction */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDDAAA132E83BD4B00E117E7 /* Build configuration list for PBXNativeTarget "Introduction" */;
@@ -229,6 +275,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
+					CD260AEC2E84C3FC0079B3E2 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
 					CDDAAA0B2E83BD4B00E117E7 = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
@@ -261,11 +310,19 @@
 				CDDAAA192E83BDB300E117E7 /* Basics */,
 				CDDAAA272E83BFE700E117E7 /* DataTypes */,
 				CDDAAABB2E83DBA000E117E7 /* ClassesAndObjects */,
+				CD260AEC2E84C3FC0079B3E2 /* Advanced */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CD260AE92E84C3FC0079B3E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CDDAAA082E83BD4B00E117E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,6 +354,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		CD260AF12E84C3FC0079B3E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD260AF22E84C3FC0079B3E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		CDDAAA112E83BD4B00E117E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -479,6 +552,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CD260AF32E84C3FC0079B3E2 /* Build configuration list for PBXNativeTarget "Advanced" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD260AF12E84C3FC0079B3E2 /* Debug */,
+				CD260AF22E84C3FC0079B3E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CDDAAA072E83BD4B00E117E7 /* Build configuration list for PBXProject "Introduction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
