@@ -28,16 +28,19 @@ int main(int argc, const char * argv[]) {
         
         /// HTTP 요청
         NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:urlRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-            NSLog(@"%@", response);
-            
             NSError *jsonError = nil;
             id jsonObject = [NSJSONSerialization JSONObjectWithData:data
                                                             options:0
                                                               error:&jsonError];
             
             NSArray *postsArray = (NSArray *)jsonObject;
+            NSMutableArray<Post *> *posts = [NSMutableArray new];
             
-            NSLog(@"%@", postsArray[0][@"title"]);
+            for (NSDictionary *postDict in postsArray) {
+                Post *post = [[Post alloc] initWithDictionary:postDict];
+                [posts addObject:post];
+                [post print];
+            }
         }];
         
         [dataTask resume];
