@@ -5,15 +5,31 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         /// NSURL 설정
         NSString *urlString = @"https://jsonplaceholder.typicode.com/posts/";
-        NSURL *url = [NSURL URLWithString:urlString];
+        NSURL *url = [NSURL URLWithString:urlString
+                encodingInvalidCharacters:true];
 
         /// NSURLRequest 설정
         NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
+        
+        // cache policy 설정
         urlRequest.cachePolicy = NSURLRequestUseProtocolCachePolicy;
-        urlRequest.timeoutInterval = 60;
+        /*
+         * NSURLRequestReloadIgnoringLocalCacheData
+         * NSURLRequestReloadIgnoringLocalAndRemoteCacheData
+         * NSURLRequestReloadIgnoringCacheData
+         * NSURLRequestReturnCacheDataElseLoad
+         * NSURLRequestReloadRevalidatingCacheData
+         */
+        
+        // components 설정
         urlRequest.HTTPMethod = @"GET";
         urlRequest.HTTPBody = nil;
+        
+        // header 설정
         urlRequest.allHTTPHeaderFields = nil;
+        
+        // behavior 설정
+        urlRequest.timeoutInterval = 60;
         
         /// NSURLSession 설정
         NSURLSessionConfiguration *configuration = NSURLSessionConfiguration.defaultSessionConfiguration;
