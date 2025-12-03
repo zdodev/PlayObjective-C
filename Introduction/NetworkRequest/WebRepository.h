@@ -9,6 +9,8 @@ typedef void(^Completion)(NSData * _Nullable data, NSError * _Nullable error);
 
 @property (nonatomic, readonly) NSString *baseURL;
 
+- (instancetype)initWithBaseURL:(NSString *)baseURL;
+
 - (void)request:(id<URLElement>)urlElement
      completion:(Completion)completion;
 

@@ -2,6 +2,14 @@
 
 @implementation WebRepository
 
+- (instancetype)initWithBaseURL:(NSString *)baseURL {
+    self = [super init];
+    if (self) {
+        _baseURL = baseURL;
+    }
+    return self;
+}
+
 - (void)request:(id<URLElement>)urlElement
      completion:(nonnull Completion)completion {
     NSURL *url = [NSURL URLWithString:_baseURL
