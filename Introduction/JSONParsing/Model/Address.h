@@ -1,8 +1,13 @@
 #import "ObjcEncodable.h"
+#import "BaseJSONModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Address : NSObject <ObjcEncodable>
+@protocol Address
+
+@end
+
+@interface Address : BaseJSONModel
 
 @property (nonatomic) NSString *city;
 @property (nonatomic) NSString *street;

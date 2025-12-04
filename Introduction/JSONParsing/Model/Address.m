@@ -14,8 +14,4 @@
     return self;
 }
 
-- (NSDictionary *)toDictionary {
-    return [self dictionaryWithValuesForKeys:@[@"city", @"street", @"zipCode"]];
-}
-
 @end
