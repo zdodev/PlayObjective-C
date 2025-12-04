@@ -25,6 +25,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		CDCA0A522EE115EE008FB531 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		CDDAAA0A2E83BD4B00E117E7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,6 +75,7 @@
 /* Begin PBXFileReference section */
 		CD260AED2E84C3FC0079B3E2 /* Advanced */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Advanced; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4EDD6C2EA6265B00671395 /* NetworkRequest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NetworkRequest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCA0A542EE115EE008FB531 /* JSONParsing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JSONParsing; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDAAA0C2E83BD4B00E117E7 /* Introduction */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Introduction; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDAAA1A2E83BDB300E117E7 /* Basics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Basics; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDAAA282E83BFE700E117E7 /* DataTypes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataTypes; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +91,11 @@
 		CD4EDD6D2EA6265B00671395 /* NetworkRequest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
+		CDCA0A552EE115EE008FB531 /* JSONParsing */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JSONParsing;
 			sourceTree = "<group>";
 		};
 		CDDAAA0E2E83BD4B00E117E7 /* Introduction */ = {
@@ -114,6 +129,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CD4EDD692EA6265B00671395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCA0A512EE115EE008FB531 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -160,6 +182,7 @@
 				CDDAAABD2E83DBA000E117E7 /* ClassesAndObjects */,
 				CD260AEE2E84C3FC0079B3E2 /* Advanced */,
 				CD4EDD6D2EA6265B00671395 /* NetworkRequest */,
+				CDCA0A552EE115EE008FB531 /* JSONParsing */,
 				CDDAAA0D2E83BD4B00E117E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -173,6 +196,7 @@
 				CDDAAABC2E83DBA000E117E7 /* ClassesAndObjects */,
 				CD260AED2E84C3FC0079B3E2 /* Advanced */,
 				CD4EDD6C2EA6265B00671395 /* NetworkRequest */,
+				CDCA0A542EE115EE008FB531 /* JSONParsing */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,6 +246,28 @@
 			);
 			productName = NetworkRequest;
 			productReference = CD4EDD6C2EA6265B00671395 /* NetworkRequest */;
+			productType = "com.apple.product-type.tool";
+		};
+		CDCA0A532EE115EE008FB531 /* JSONParsing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDCA0A5A2EE115EE008FB531 /* Build configuration list for PBXNativeTarget "JSONParsing" */;
+			buildPhases = (
+				CDCA0A502EE115EE008FB531 /* Sources */,
+				CDCA0A512EE115EE008FB531 /* Frameworks */,
+				CDCA0A522EE115EE008FB531 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CDCA0A552EE115EE008FB531 /* JSONParsing */,
+			);
+			name = JSONParsing;
+			packageProductDependencies = (
+			);
+			productName = JSONParsing;
+			productReference = CDCA0A542EE115EE008FB531 /* JSONParsing */;
 			productType = "com.apple.product-type.tool";
 		};
 		CDDAAA0B2E83BD4B00E117E7 /* Introduction */ = {
@@ -319,13 +365,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 2600;
+				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					CD260AEC2E84C3FC0079B3E2 = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
 					CD4EDD6B2EA6265B00671395 = {
 						CreatedOnToolsVersion = 26.0.1;
+					};
+					CDCA0A532EE115EE008FB531 = {
+						CreatedOnToolsVersion = 26.1.1;
 					};
 					CDDAAA0B2E83BD4B00E117E7 = {
 						CreatedOnToolsVersion = 26.0.1;
@@ -361,6 +410,7 @@
 				CDDAAABB2E83DBA000E117E7 /* ClassesAndObjects */,
 				CD260AEC2E84C3FC0079B3E2 /* Advanced */,
 				CD4EDD6B2EA6265B00671395 /* NetworkRequest */,
+				CDCA0A532EE115EE008FB531 /* JSONParsing */,
 			);
 		};
 /* End PBXProject section */
@@ -374,6 +424,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CD4EDD682EA6265B00671395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCA0A502EE115EE008FB531 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -415,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -423,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -431,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -439,6 +499,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CDCA0A582EE115EE008FB531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDCA0A592EE115EE008FB531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -477,6 +558,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -501,6 +583,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 			};
 			name = Debug;
 		};
@@ -538,6 +621,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -555,6 +639,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 			};
 			name = Release;
 		};
@@ -562,6 +647,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -570,6 +656,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -578,6 +665,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -586,6 +674,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -594,6 +683,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -602,6 +692,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -610,6 +701,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -618,6 +710,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -639,6 +732,15 @@
 			buildConfigurations = (
 				CD4EDD702EA6265B00671395 /* Debug */,
 				CD4EDD712EA6265B00671395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDCA0A5A2EE115EE008FB531 /* Build configuration list for PBXNativeTarget "JSONParsing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCA0A582EE115EE008FB531 /* Debug */,
+				CDCA0A592EE115EE008FB531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
