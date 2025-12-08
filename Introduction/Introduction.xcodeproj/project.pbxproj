@@ -25,6 +25,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		CD8E772D2EE65BF900B27F45 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		CDCA0A522EE115EE008FB531 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,12 +84,24 @@
 /* Begin PBXFileReference section */
 		CD260AED2E84C3FC0079B3E2 /* Advanced */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Advanced; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4EDD6C2EA6265B00671395 /* NetworkRequest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NetworkRequest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8E77242EE65BA000B27F45 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8E772F2EE65BF900B27F45 /* Testable */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Testable; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCA0A542EE115EE008FB531 /* JSONParsing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JSONParsing; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDAAA0C2E83BD4B00E117E7 /* Introduction */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Introduction; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDAAA1A2E83BDB300E117E7 /* Basics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Basics; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDAAA282E83BFE700E117E7 /* DataTypes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataTypes; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDAAABC2E83DBA000E117E7 /* ClassesAndObjects */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClassesAndObjects; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CD8E77442EE6614C00B27F45 /* Exceptions for "Testable" folder in "Tests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				TestableCalculator.m,
+			);
+			target = CD8E77232EE65BA000B27F45 /* Tests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CD260AEE2E84C3FC0079B3E2 /* Advanced */ = {
@@ -91,6 +112,19 @@
 		CD4EDD6D2EA6265B00671395 /* NetworkRequest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
+		CD8E77252EE65BA000B27F45 /* Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		CD8E77302EE65BF900B27F45 /* Testable */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CD8E77442EE6614C00B27F45 /* Exceptions for "Testable" folder in "Tests" target */,
+			);
+			path = Testable;
 			sourceTree = "<group>";
 		};
 		CDCA0A552EE115EE008FB531 /* JSONParsing */ = {
@@ -129,6 +163,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CD4EDD692EA6265B00671395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8E77212EE65BA000B27F45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8E772C2EE65BF900B27F45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -183,6 +231,8 @@
 				CD260AEE2E84C3FC0079B3E2 /* Advanced */,
 				CD4EDD6D2EA6265B00671395 /* NetworkRequest */,
 				CDCA0A552EE115EE008FB531 /* JSONParsing */,
+				CD8E77252EE65BA000B27F45 /* Tests */,
+				CD8E77302EE65BF900B27F45 /* Testable */,
 				CDDAAA0D2E83BD4B00E117E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -197,6 +247,8 @@
 				CD260AED2E84C3FC0079B3E2 /* Advanced */,
 				CD4EDD6C2EA6265B00671395 /* NetworkRequest */,
 				CDCA0A542EE115EE008FB531 /* JSONParsing */,
+				CD8E77242EE65BA000B27F45 /* Tests.xctest */,
+				CD8E772F2EE65BF900B27F45 /* Testable */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,6 +298,50 @@
 			);
 			productName = NetworkRequest;
 			productReference = CD4EDD6C2EA6265B00671395 /* NetworkRequest */;
+			productType = "com.apple.product-type.tool";
+		};
+		CD8E77232EE65BA000B27F45 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8E772A2EE65BA000B27F45 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				CD8E77202EE65BA000B27F45 /* Sources */,
+				CD8E77212EE65BA000B27F45 /* Frameworks */,
+				CD8E77222EE65BA000B27F45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CD8E77252EE65BA000B27F45 /* Tests */,
+			);
+			name = Tests;
+			packageProductDependencies = (
+			);
+			productName = Tests;
+			productReference = CD8E77242EE65BA000B27F45 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD8E772E2EE65BF900B27F45 /* Testable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8E77332EE65BF900B27F45 /* Build configuration list for PBXNativeTarget "Testable" */;
+			buildPhases = (
+				CD8E772B2EE65BF900B27F45 /* Sources */,
+				CD8E772C2EE65BF900B27F45 /* Frameworks */,
+				CD8E772D2EE65BF900B27F45 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CD8E77302EE65BF900B27F45 /* Testable */,
+			);
+			name = Testable;
+			packageProductDependencies = (
+			);
+			productName = Testable;
+			productReference = CD8E772F2EE65BF900B27F45 /* Testable */;
 			productType = "com.apple.product-type.tool";
 		};
 		CDCA0A532EE115EE008FB531 /* JSONParsing */ = {
@@ -373,6 +469,12 @@
 					CD4EDD6B2EA6265B00671395 = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
+					CD8E77232EE65BA000B27F45 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					CD8E772E2EE65BF900B27F45 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
 					CDCA0A532EE115EE008FB531 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
@@ -411,9 +513,21 @@
 				CD260AEC2E84C3FC0079B3E2 /* Advanced */,
 				CD4EDD6B2EA6265B00671395 /* NetworkRequest */,
 				CDCA0A532EE115EE008FB531 /* JSONParsing */,
+				CD8E77232EE65BA000B27F45 /* Tests */,
+				CD8E772E2EE65BF900B27F45 /* Testable */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD8E77222EE65BA000B27F45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD260AE92E84C3FC0079B3E2 /* Sources */ = {
@@ -424,6 +538,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CD4EDD682EA6265B00671395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8E77202EE65BA000B27F45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD8E772B2EE65BF900B27F45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -500,6 +628,54 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD8E77282EE65BA000B27F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zdodev.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Debug;
+		};
+		CD8E77292EE65BA000B27F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zdodev.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Release;
+		};
+		CD8E77342EE65BF900B27F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD8E77352EE65BF900B27F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -732,6 +908,24 @@
 			buildConfigurations = (
 				CD4EDD702EA6265B00671395 /* Debug */,
 				CD4EDD712EA6265B00671395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8E772A2EE65BA000B27F45 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8E77282EE65BA000B27F45 /* Debug */,
+				CD8E77292EE65BA000B27F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8E77332EE65BF900B27F45 /* Build configuration list for PBXNativeTarget "Testable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8E77342EE65BF900B27F45 /* Debug */,
+				CD8E77352EE65BF900B27F45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
